@@ -21,7 +21,7 @@
 }
 
 @each $name in $iconNames {
-    .#{$baseClass}-#{$name}:before {
+    .#{$baseClass}-#{nth($name, 1)}:before {
         content: nth($name, 2)
     }
 }

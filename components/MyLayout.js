@@ -3,7 +3,7 @@
  */
 import Header from './Header'
 import Head from 'next/head'
-// import '../public/style/base/base_import.scss'
+import '../public/style/scss/base/base_import.scss'
 
 const MyLayout = (props) => (
     <div>

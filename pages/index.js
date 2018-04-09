@@ -1,75 +1,10 @@
 /**
  * Created by zhang-j on 2018/3/22.
  */
-import Link from 'next/link'
 import Layout from '../components/MyLayout'
-import fetch from 'isomorphic-unfetch'
+import '../public/style/scss/module/index.scss'
 
-const PostLink = (props) => (
-    <li>
-        <Link as={`/p/${props.id}`} href={`/post?id=${props.id}`}>
-            <a>{props.name}</a>
-        </Link>
-        <style jsx>
-            {`
-                  a {
-                    font-family: "Arial";
-                  }
-
-                  li {
-                    list-style: none;
-                    margin: 5px 0;
-                  }
-
-                  a {
-                    text-decoration: none;
-                    color: blue;
-                  }
-
-                  a:hover {
-                    opacity: 0.6;
-                  }
-                `}
-        </style>
-    </li>
-);
-
-// const Index = (props) => {
-//     return (
-//         <Layout>
-//             <h1>Batman TV Shows</h1>
-//             <ul>
-//                 {props.shows.map(({show}) => (
-//                     <PostLink key={show.id} id={show.id} name={show.name}/>
-//                 ))}
-//             </ul>
-//             <style jsx>
-//                 {`
-//                   h1 {
-//                     font-family: "Arial";
-//                   }
-//
-//                   ul {
-//                     padding: 0;
-//                   }
-//                 `}
-//             </style>
-//         </Layout>
-//     );
-// };
-//
-// Index.getInitialProps = async function () {
-//     const res = await fetch('https://api.tvmaze.com/search/shows?q=batman');
-//     const data = await res.json();
-//
-//     console.log(`Show data fetched. Count: ${data.length}`);
-//
-//     return {
-//         shows: data
-//     };
-// };
-
-const Index = (props) => {
+const Index = () => {
     const seo = {
         title: '中国制造网-立足内贸领域，专注中国制造的B2B电子商务平台',
         keywords: '中国制造网,B2B电子商务平台,内贸平台,免费发布产品,行业市场,采购批发,公司黄页,行业资讯',
@@ -78,7 +13,26 @@ const Index = (props) => {
     return (
         <Layout {...seo}>
             <div>
-                <div className="">Hello</div>
+                <div className="main-hd">
+                    <h1>Hello World!</h1>
+                </div>
+                <ul className="main-bd">
+                    <li>
+                        <a href="/theme">
+                            <i className="iconfont iconfont-home-theme"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/list">
+                            <i className="iconfont iconfont-home-list"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/aboutus">
+                            <i className="iconfont iconfont-home-aboutus"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </Layout>
     );

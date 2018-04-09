@@ -1,3 +1,13 @@
 @import "css3";
 @import "font";
 @import "normalize";
+
+h1 {
+    margin: 0;
+}
+ol, ul {
+    list-style: none;
+}
+i {
+    font-style: normal;
+}
