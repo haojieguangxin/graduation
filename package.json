@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-sass": "^0.1.2",
+    "axios": "^0.18.0",
     "express": "^4.16.3",
     "isomorphic-unfetch": "^2.0.0",
     "next": "^5.0.0",
@@ -28,6 +29,7 @@
     "cross-env": "^5.1.4",
     "css-loader": "^0.28.11",
     "file-loader": "^1.1.11",
+    "http-proxy-middleware": "^0.18.0",
     "json-server": "^0.12.1",
     "mockjs": "^1.0.1-beta3",
     "node-sass": "^4.8.3",
