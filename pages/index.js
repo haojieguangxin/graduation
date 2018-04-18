@@ -4,6 +4,8 @@
 import Layout from '../components/MyLayout'
 import '../public/style/scss/module/index.scss'
 
+import {Icon} from 'antd';
+
 const Index = () => {
     const seo = {
         title: '中国制造网-立足内贸领域，专注中国制造的B2B电子商务平台',
@@ -19,17 +21,17 @@ const Index = () => {
                 <ul className="main-bd">
                     <li>
                         <a href="/theme">
-                            <i className="iconfont iconfont-home-theme"></i>
+                            <Icon spin={true} type="home-theme"/>
                         </a>
                     </li>
                     <li>
                         <a href="/list">
-                            <i className="iconfont iconfont-home-list"></i>
+                            <Icon type="home-list"/>
                         </a>
                     </li>
                     <li>
                         <a href="/aboutus">
-                            <i className="iconfont iconfont-home-aboutus"></i>
+                            <Icon type="home-aboutus"/>
                         </a>
                     </li>
                 </ul>
